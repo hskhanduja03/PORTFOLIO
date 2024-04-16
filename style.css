@@ -44,6 +44,8 @@ Height:100%;
     font-weight: 100;
     line-height: 130px;
     text-transform: uppercase;
+    transition: font-size 1s, font-weight 1s, line-height 1s; /* Transition added */
+
 }
 
 #main-text h3:nth-child(1){
@@ -77,14 +79,16 @@ a{
     text-decoration: none;
 }
 
-#bottom{
+#bottom {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
     overflow: hidden;
-    height: 60px;
-    margin-top: 20px;
     text-transform: uppercase;
 }
 
@@ -93,3 +97,27 @@ a{
     flex-direction: column;
     align-items: center;
 }
+
+@media (max-width: 1230px){
+    #main-text h3 {
+        font-size: 100px;
+        font-weight: 100;
+        line-height: 100px;
+    }
+
+    #bottom {
+        position: fixed;
+        bottom: 40px; /* Changed bottom position */
+        left: 0;
+        width: 100%;
+        transition: bottom 1s;
+    }
+}
+
+/* @media (max-height: 1140px  ){
+    #main-text h3{
+        font-size: 100px;
+        font-weight: 100;
+        line-height: 100px;
+    }
+} */
