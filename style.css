@@ -1,10 +1,16 @@
- *{ 
-Margin:0;
-Padding:0;
-Box-sizing: border-box;
-Font-family: 'gilroy';
-color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '.roboto-medium', sans-serif; /* Specify Roboto as the font family */
+    color: white;
 }
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
 
 html,body{
 Width:100%;
@@ -114,10 +120,18 @@ a{
     }
 }
 
-/* @media (max-height: 1140px  ){
+@media (max-height: 550px){
     #main-text h3{
         font-size: 100px;
         font-weight: 100;
         line-height: 100px;
     }
-} */
+}
+
+@media (max-width: 1050px){
+    #main-text h3 {
+        font-size: 80px;
+        font-weight: 100;
+        line-height: 80px;
+    }
+}
